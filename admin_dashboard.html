@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar" aria-label="Admin Navigation">
+            <div class="logo"><i class="fa-solid fa-user-shield"></i> LMS Admin</div>
+            <ul>
+                <li>
+                    <a href="admin_dashboard.html">
+                        <i class="fa-solid fa-gauge"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="admin_applications.html">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Applications</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="handleLogout()">
+                        <i class="fa-solid fa-sign-out-alt"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="header">
+                <h2>Admin Overview</h2>
+                <div>Logged in as: <strong>Admin</strong></div>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>System Users</h3>
+                    <p>Active</p>
+                </div>
+                <div class="card">
+                    <h3>Applications</h3>
+                    <p>Active</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
